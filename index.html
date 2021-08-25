@@ -1,0 +1,423 @@
+<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Tue Aug 24 2021 23:57:59 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="602dce754d605ad3201164a8" data-wf-site="602dce754d605a196e1164a7">
+<head>
+  <meta charset="utf-8">
+  <title>Crypto Site</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/dark-crypto-site.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+/*Here you can customize the SVG colors */
+.shape-overlays__path:nth-of-type(1) {
+	fill: #413f46;
+}
+.shape-overlays__path:nth-of-type(2) {
+	fill: #e6e5ea;
+}
+.shape-overlays__path:nth-of-type(3) {
+	fill: #cccccc;
+}
+.shape-overlays__path:nth-of-type(4) {
+	fill: #cccccc;
+}
+</style>
+  <style>
+/*Global mandatory styles */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+.content {
+	pointer-events: none;
+}
+.hamburger {
+  pointer-events: auto;
+}
+.hamburger::after {
+	pointer-events: none;
+}
+.global-menu {
+	pointer-events: none;
+}
+.global-menu__item {
+	pointer-events: none;
+}
+.global-menu__item.is-opened {
+	pointer-events: auto;
+}
+.shape-overlays {
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.shape-overlays.is-opened {
+	pointer-events: auto;
+}
+</style>
+</head>
+<body class="body">
+  <div data-w-id="98566f75-bec6-4207-51d3-8dcbb048dc42" data-animation-type="lottie" data-src="documents/lf30_editor_i7dxryjt.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="6.666666666666667" data-duration="6.666666666666667" class="lottie-animation-6"></div>
+  <div class="navigation-wrap">
+    <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navigation w-nav">
+      <div class="navigation-container">
+        <div class="navigation-left">
+          <a href="index.html" aria-current="page" class="logo-block w-inline-block w--current">
+            <div data-w-id="cfd68d87-bba6-d920-7c5d-09debd207916" data-animation-type="lottie" data-src="documents/lf20_so3aDA.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
+          </a>
+          <div class="subheader-clip-wrapper my-0">
+            <h4 class="subheader">Dark Matter</h4>
+          </div>
+        </div>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="#" class="navigation-link w-nav-link">Farm</a>
+          <a href="#" class="navigation-link w-nav-link">Vaults</a>
+          <a href="#" class="navigation-link w-nav-link">NFTs</a>
+          <a href="https://github.com/darkmatterdefi" class="navigation-link w-nav-link">Docs</a>
+          <a href="https://darkmatterdefi.gitbooks.io" class="navigation-link w-nav-link">Story</a>
+        </nav>
+        <div class="navigation-right">
+          <a href="https://webflow.com/website/Webflow-Cloneable-Navigation-CLONE?rfsn=1238427.48b8d" target="_blank" class="button-menu w-button">BUY $KDM</a>
+        </div>
+      </div>
+    </div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out" data-easing2="ease-out" role="banner" class="navigation-mob w-nav">
+      <div class="navigation-container-mob">
+        <a href="#" class="w-nav-brand">
+          <div data-w-id="b1b5ed59-a155-338c-510e-f27b4a360458" data-animation-type="lottie" data-src="documents/lf20_so3aDA.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
+        </a>
+        <nav role="navigation" class="mobile-nav w-nav-menu">
+          <a href="#" class="mobile-nav-link w-nav-link">Farm</a>
+          <div data-delay="0" class="mobile-dropdown w-dropdown">
+            <div class="mobile-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Vaults</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c07cffaf2bbca_label.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div class="text-block-61">The Designer</div>
+                  <div class="nav-link-details">Explore and Learn</div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c077293f2bbcc_Orders.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div>Content Management</div>
+                  <div class="nav-link-details">Connect &amp; Manage</div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c073e21f2bbc4_Collection.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div>Interactions</div>
+                  <div class="nav-link-details">Animate and move</div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c0759e4f2bbd1_Settings.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div class="nav-link-title">Ecommerce</div>
+                  <div class="nav-link-details">Business &amp; Sales</div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c076604f2bbce_member.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div>AWS Services</div>
+                  <div class="nav-link-details">Cloud &amp; Hosting</div>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <div data-delay="0" class="mobile-dropdown w-dropdown">
+            <div class="mobile-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>NFTs</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c077ee4f2bbcb_Homepage.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div class="text-block-61">Our Story</div>
+                  <div class="nav-link-details">Explore our History</div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c074955f2bbcf_search%20for.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div>Our Jobs</div>
+                  <div class="nav-link-details">Join our Team</div>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <div data-delay="0" class="mobile-dropdown w-dropdown">
+            <div class="mobile-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Docs</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <a href="#" class="dropdown-link-mobile w-inline-block">
+                <div class="icon-square"><img src="https://uploads-ssl.webflow.com/60e72ff2d80c077715f2bbac/60e72ff2d80c073e21f2bbc4_Collection.svg" alt=""></div>
+                <div class="nav-content-wrap">
+                  <div class="text-block-61">University Resources</div>
+                  <div class="nav-link-details">Explore and Learn</div>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <a href="#" class="mobile-nav-link w-nav-link">Story</a>
+        </nav>
+        <div class="menu-mob w-nav-button">
+          <div class="icon-5 w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="animation-mask"></div>
+  <div class="flowbase-section">
+    <div class="container">
+      <div class="title-wrap">
+        <div class="subheader-clip-wrapper">
+          <h4 class="subheader">Dark matter</h4>
+        </div>
+        <h1 class="heading">TWO FACTIONS BATTLING</h1>
+        <p class="hero-paragraph padding-bottom">Hot vs Cold fighting for control of the Universe</p>
+        <p class="hero-paragraph"><span class="subheader-clip-wrapper">$KDM</span> coming soon. <br>Follow us on Instagram and Twitter</p>
+        <div class="social-media-container">
+          <a href="https://twitter.com/darkmatterdefi" class="social-link w-inline-block"><img src="images/icons8-twitter-30.png" loading="lazy" alt="" class="image-3"></a>
+          <a href="https://instagram.com/darkmatterdefi" class="social-link w-inline-block"><img src="images/icons8-instagram-logo-30.png" loading="lazy" alt="" class="image-4"></a>
+          <a href="https://t.me/darkmatterdefi" class="social-link w-inline-block"><img src="images/icons8-telegram-app-30.png" loading="lazy" alt="" class="image-4"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="features" class="s-content-white wf-section">
+    <div class="c-1200">
+      <div class="center-content-outer-wrapper">
+        <div class="center-content-inner-wrapper">
+          <div class="subheader-clip-wrapper">
+            <h4 class="subheader">Tokenomics</h4>
+          </div>
+          <h2 class="h2-center">Here&#x27;s a header you can use if you want to</h2>
+          <p class="p-center">Let&#x27;s write something that makes sense.</p>
+        </div>
+      </div>
+      <div class="w-layout-grid grid-3-1">
+        <div id="w-node-_153449a8-c5fb-dc8e-fcd3-9944054c9471-201164a8" data-w-id="153449a8-c5fb-dc8e-fcd3-9944054c9471" style="opacity:0" class="grid-box-wrapper center">
+          <div data-w-id="cc5a78cf-97e1-9293-eea1-05af49abd56c" data-animation-type="lottie" data-src="documents/5039-planet.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-7"></div>
+          <h3 class="h3-center">Farm</h3>
+          <p class="p-center">Earn $KDM with your LP Tokens</p>
+        </div>
+        <div id="w-node-_153449a8-c5fb-dc8e-fcd3-9944054c9477-201164a8" data-w-id="153449a8-c5fb-dc8e-fcd3-9944054c9477" style="opacity:0" class="grid-box-wrapper center">
+          <div data-w-id="ca0c16e9-c42b-53a2-fee5-8d5a115206f3" data-animation-type="lottie" data-src="documents/5054-rocket.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-8"></div>
+          <h3 class="h3-center">Vaults</h3>
+          <p class="p-center">Earn $KDM with <br>auto-compounding Strategies</p>
+        </div>
+        <div id="w-node-_20c18778-b3ec-c48b-fbfe-ee380864cfa7-201164a8" data-w-id="20c18778-b3ec-c48b-fbfe-ee380864cfa7" style="opacity:0" class="grid-box-wrapper center">
+          <div data-w-id="20c18778-b3ec-c48b-fbfe-ee380864cfa8" data-animation-type="lottie" data-src="documents/5040-shooting-star-1.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0.9583333333333334" data-duration="0" class="lottie-animation-9"></div>
+          <h3 class="h3-center">Staking</h3>
+          <p class="p-center">Earn $KDM staking your single-asset tokens</p>
+        </div>
+        <div id="w-node-_153449a8-c5fb-dc8e-fcd3-9944054c947d-201164a8" data-w-id="153449a8-c5fb-dc8e-fcd3-9944054c947d" style="opacity:0" class="grid-box-wrapper center">
+          <div data-w-id="2cabc6c3-e2a8-757d-4ae2-312e26ca7f2d" data-animation-type="lottie" data-src="documents/5102-alien.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-9"></div>
+          <h3 class="h3-center">NFTs</h3>
+          <p class="p-center">Burn $KDM to mint <br>stake-able NFTs </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container-flex">
+      <a href="#" class="logo-block w-inline-block">
+        <div data-w-id="18bdf8ab-3d65-df83-56db-1eda00fe8aa9" data-animation-type="lottie" data-src="documents/lf20_so3aDA.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
+      </a>
+      <div class="form-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" class="subscribe-form-flex">
+          <div class="subscribe-form-input-wrapper"><input type="email" class="subscribe-form-footer w-input" maxlength="256" name="Subscriber-Email-2" data-name="Subscriber Email 2" placeholder="Enter email address" id="Subscriber-Email-2" required=""></div><input type="submit" value="" data-wait="Please wait..." class="submit-button_footer w-button">
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+      <div class="social-media-container">
+        <a href="https://twitter.com/darkmatterdefi" class="social-link w-inline-block"><img src="images/Twitter.svg" loading="lazy" alt="" class="image-3"></a>
+        <a href="https://instagram.com/darkmatterdefi" class="social-link w-inline-block"><img src="images/Instagram.svg" loading="lazy" alt="" class="image-4"></a>
+        <a href="https://www.youtube.com/channel/UCRePzLUtQgprmcK2vaX5QvA" class="social-link w-inline-block"><img src="images/icons8-youtube-play-button-30-1.png" loading="lazy" alt="" class="image-4"></a>
+        <a href="https://discord.gg/2F7ZRC2dhQ" class="social-link w-inline-block"><img src="images/icons8-discord-30.png" loading="lazy" width="30" alt="" class="image-4"></a>
+        <a href="https://t.me/darkmatterdefi" class="social-link w-inline-block"><img src="images/icons8-telegram-app-30.png" loading="lazy" alt="" class="image-4"></a>
+        <a href="https://medium.com/@darkmatterdefi" class="social-link w-inline-block"><img src="images/icons8-medium-monogram-30.png" loading="lazy" alt="" class="image-4"></a>
+      </div>
+      <div class="subtitle-footer">-----------------------</div>
+      <div class="subtitle-footer my-2">© 2021 All rights reserved. Design by <a href="http://kdm.network" target="_blank" class="link-2">Dark Matter</a> for use by the decentralized community. Please support us where you can &lt;3</div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=602dce754d605a196e1164a7" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+// These are the 'Easing' functions we will reference
+const ease = {
+  exponentialIn: (t) => {
+    return t == 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0));
+  },
+  exponentialOut: (t) => {
+    return t == 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t);
+  },
+  exponentialInOut: (t) => {
+    return t == 0.0 || t == 1.0
+      ? t
+      : t < 0.5
+        ? +0.5 * Math.pow(2.0, (20.0 * t) - 10.0)
+        : -0.5 * Math.pow(2.0, 10.0 - (t * 20.0)) + 1.0;
+  },
+  sineOut: (t) => {
+    const HALF_PI = 1.5707963267948966;
+    return Math.sin(t * HALF_PI);
+  },
+  circularInOut: (t) => {
+    return t < 0.5
+        ? 0.5 * (1.0 - Math.sqrt(1.0 - 4.0 * t * t))
+        : 0.5 * (Math.sqrt((3.0 - 2.0 * t) * (2.0 * t - 1.0)) + 1.0);
+  },
+  cubicIn: (t) => {
+    return t * t * t;
+  },
+  cubicOut: (t) => {
+    const f = t - 1.0;
+    return f * f * f + 1.0;
+  },
+  cubicInOut: (t) => {
+    return t < 0.5
+      ? 4.0 * t * t * t
+      : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0;
+  },
+  quadraticOut: (t) => {
+    return -t * (t - 2.0);
+  },
+  quarticOut: (t) => {
+    return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
+  },
+}
+</script>
+  <script>
+//Demo 1 Code
+class ShapeOverlays {
+  constructor(elm) {
+    this.elm = elm;
+    this.path = elm.querySelectorAll('path');
+    this.numPoints = 18;
+    this.duration = 600;
+    this.delayPointsArray = [];
+    this.delayPointsMax = 300;
+    this.delayPerPath = 100;
+    this.timeStart = Date.now();
+    this.isOpened = false;
+    this.isAnimating = false;
+  }
+  toggle() {
+    this.isAnimating = true;
+    const range = 4 * Math.random() + 6;
+    for (var i = 0; i < this.numPoints; i++) {
+      const radian = i / (this.numPoints - 1) * Math.PI;
+      this.delayPointsArray[i] = (Math.sin(-radian) + Math.sin(-radian * range) + 2) / 4 * this.delayPointsMax;
+    }
+    if (this.isOpened === false) {
+      this.open();
+    } else {
+      this.close();
+    }
+  }
+  open() {
+    this.isOpened = true;
+    this.elm.classList.add('is-opened');
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  close() {
+    this.isOpened = false;
+    this.elm.classList.remove('is-opened');
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  updatePath(time) {
+    const points = [];
+    for (var i = 0; i < this.numPoints + 1; i++) {
+      points[i] = ease.cubicInOut(Math.min(Math.max(time - this.delayPointsArray[i], 0) / this.duration, 1)) * 100
+    }
+    let str = '';
+    str += (this.isOpened) ? `M 0 0 V ${points[0]} ` : `M 0 ${points[0]} `;
+    for (var i = 0; i < this.numPoints - 1; i++) {
+      const p = (i + 1) / (this.numPoints - 1) * 100;
+      const cp = p - (1 / (this.numPoints - 1) * 100) / 2;
+      str += `C ${cp} ${points[i]} ${cp} ${points[i + 1]} ${p} ${points[i + 1]} `;
+    }
+    str += (this.isOpened) ? `V 0 H 0` : `V 100 H 0`;
+    return str;
+  }
+  render() {
+    if (this.isOpened) {
+      for (var i = 0; i < this.path.length; i++) {
+        this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * i)));
+      }
+    } else {
+      for (var i = 0; i < this.path.length; i++) {
+        this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * (this.path.length - i - 1))));
+      }
+    }
+  }
+  renderLoop() {
+    this.render();
+    if (Date.now() - this.timeStart < this.duration + this.delayPerPath * (this.path.length - 1) + this.delayPointsMax) {
+      requestAnimationFrame(() => {
+        this.renderLoop();
+      });
+    }
+    else {
+      this.isAnimating = false;
+    }
+  }
+}
+(function() {
+  const elmHamburger = document.querySelector('.hamburger');
+  const gNavItems = document.querySelectorAll('.global-menu__item');
+  const elmOverlay = document.querySelector('.shape-overlays');
+  const overlay = new ShapeOverlays(elmOverlay);
+  elmHamburger.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+}());
+</script>
+</body>
+</html>
